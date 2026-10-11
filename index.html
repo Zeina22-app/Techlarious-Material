@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLink | Find Help, Share Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">HelpLink</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#requests">Find Help</a></li>
+                <li><a href="#create-request">Request Help</a></li>
+            </ul>
+
+            <a href="#create-request" class="nav-button">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-label">YOUR COMMUNITY, CONNECTED</p>
+
+                <h1>Need a hand?<br>
+                    <span>We're here to help.</span>
+                </h1>
+
+                <p class="hero-description">
+                    HelpLink connects people who need help with people
+                    who have the skills to make a difference.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#requests" class="btn btn-primary">
+                        Find Help
+                    </a>
+
+                    <a href="#create-request" class="btn btn-secondary">
+                        Request Help
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Categories -->
+        <section class="categories">
+            <div class="section-heading">
+                <p class="section-label">EXPLORE SERVICES</p>
+                <h2>How can we help you?</h2>
+                <p>Find the right support for your needs.</p>
+            </div>
+
+            <div class="category-grid">
+                <article class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Technology</h3>
+                    <p>Programming, software, and technical support.</p>
+                </article>
+
+                <article class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>Home Repairs</h3>
+                    <p>Find help with everyday home problems.</p>
+                </article>
+
+                <article class="category-card">
+                    <div class="category-icon">📝</div>
+                    <h3>CV & Career</h3>
+                    <p>Get support with your CV and job applications.</p>
+                </article>
+
+                <article class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>Connect with people who have creative skills.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Help Requests -->
+        <section class="requests-section" id="requests">
+            <div class="section-heading">
+                <p class="section-label">COMMUNITY REQUESTS</p>
+                <h2>People who need a hand</h2>
+                <p>Explore requests and discover where you can help.</p>
+            </div>
+
+            <div class="request-grid">
+                <article class="request-card">
+                    <span class="request-category">Technology</span>
+                    <h3>Help with a programming project</h3>
+                    <p>Looking for someone to review a beginner's
+                        programming project and explain a few errors.</p>
+                    <div class="request-footer">
+                        <span class="priority normal">Normal Priority</span>
+                        <a href="#create-request">View Details →</a>
+                    </div>
+                </article>
+
+                <article class="request-card">
+                    <span class="request-category">Home Repairs</span>
+                    <h3>Need help fixing a leaking tap</h3>
+                    <p>Looking for an experienced person who can help
+                        with a small plumbing problem.</p>
+                    <div class="request-footer">
+                        <span class="priority urgent">Urgent</span>
+                        <a href="#create-request">View Details →</a>
+                    </div>
+                </article>
+
+                <article class="request-card">
+                    <span class="request-category">CV & Career</span>
+                    <h3>Review my CV</h3>
+                    <p>I would appreciate feedback on my CV before
+                        applying for a new job.</p>
+                    <div class="request-footer">
+                        <span class="priority normal">Normal Priority</span>
+                        <a href="#create-request">View Details →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Create Help Request Form -->
+        <section class="form-section" id="create-request">
+            <div class="form-intro">
+                <p class="section-label">WE'RE HERE FOR YOU</p>
+                <h2>Tell us what you need</h2>
+                <p>Describe your problem and connect with someone
+                    who can help.</p>
+            </div>
+
+            <form class="request-form">
+                <div class="form-group">
+                    <label for="title">Request Title</label>
+                    <input type="text" id="title" name="title"
+                        placeholder="What do you need help with?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="technology">Technology</option>
+                        <option value="home-repairs">Home Repairs</option>
+                        <option value="career">CV & Career</option>
+                        <option value="design">Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description"
+                        rows="5" placeholder="Explain what you need..."
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">Choose priority</option>
+                        <option value="normal">Normal</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Submit Request
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">HelpLink</a>
+        <p>Bringing people together through helpful connections.</p>
+        <p class="copyright">© 2026 HelpLink. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
